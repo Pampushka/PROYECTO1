@@ -1,173 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+<!-- The charset attribute specifies the character encoding for the HTML document. The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world!-->
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Nobody needs this tag, as it was used for picking what version of Microsoft Explorerto run
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />  -->
+<!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- The HTTP Cache-Control header holds directives (instructions) in both requests and responses that control caching in browsers and shared caches (e.g., Proxies, CDNs).-->       
         <meta http-equiv="Cache-Control" content="max-age=604800">
+<!-- WebpageDescription-->
         <meta name="description" content="Mercedes Benz Luxury Vehicle Company">
+<!-- Webpage Author-->
         <meta name="author" content="Mercedes Benz Luxury Vehicle Company">
-        <meta name="keywords" content="mercedes, mercedesbenz, luxury, vehicle, electric, car, hybrid, maybach, store">
-        <title>Mercedez Benz - Luxury Vehicle Company</title>
-        <link rel="icon" href="images/mercedes benz.png">
-        <style>@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');</style>
-                <link rel="stylesheet" href="styles.css">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+<!-- Keywords-->
+        <meta name="keywords" content="mercedes, mercedesbenz, luxury, vehicle, electric, car, hybrid, maybach, store">
+          <title>Mercedez Benz - Luxury Vehicle Company</title>
+            <link rel="icon" href="images/mercedes benz.png">
+              <style>@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');</style>
+            <link rel="stylesheet" href="styles.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
       <body>
         <header>
-          <div class="left_buttons">
-            <button class="logo_button">
-              <img class="logo_image" src="images/logo.png" alt="Home">
-                </button>
-                    <button class="electric">
-                        <h5 class="abeezee-regular">
-                        ELECTRIC
-                        </h5>
-                    </button>
-                    <button class="maybach">
-                        <h5 class="abeezee-regular">
-                        MAYBACH
-                        </h5>
-                    </button>
-                    <button class="accessories">
-                        <h5 class="abeezee-regular">
-                        ACCESSORIES
-                        </h5>
-                    </button>
-                    <button class="stores">
-                        <h5 class="abeezee-regular">
-                        STORES
-                        </h5>
-                        </button>
-        </div>
-              <div class="right_buttons">
-                    <div class="wrapper">
-                        <button class="user_button">
-                            <img class="image_user" src="images/user.svg" alt="Your Account">
-                        </button>
-                        <button class="cart_button">
-                            <img class="image_cart" src="images/cart.svg" alt="Your Cart">
-                        </button>
-                            <div class="placeholder">
-                            </div>
-                    </div>
+          <div class="navbar">
+              <div class="home"><img class="logo" src="images/logo.png" alt="home">
               </div>
-                    <div style="width: 100%; height: 1px; color: gray;">
+              <ul class="links">
+                <li><a href="electric_models">ELECTRIC</a></li>
+                <li><a href="Maybach_models">MAYBACH</a></li>
+                <li><a href="accessories">ACCESSORIES</a></li>
+                <li><a href="stores">STORES</a></li>
+              </ul>
+          </div>
+                <div class="image_buttons">
+                  <button><img src="images/user.svg" alt="account"></button>
+                  <button><img src="images/cart.svg" alt="cart"></button>
+                </div>
+                    <div class="toggle_btn">
+                      <img class="bars" src="images/bars-solid (1).svg" alt="mobile_menu">
                     </div>
+                </div>
+          </div>
         </header>
-        <main>
-            <div class="main_image">
-              <img loading="lazy" src="images/Mercedes CLS.png" alt="New Mercedes CLS" class="background_image">
-                  <h3 class="top_left"; class="abhaya-libre-regular" style="font-size: 70px;">
-                      New Mercedes CLS
-                  </h3>
-                  <h1 class="top_left_small" class="abeezee-regular" style="font-size: 16px;">
-                    The power in your hands
-                  </h1>
-            </div>
-        <div class="section_cards">
-                <div class="card">
-                   <div class="top_text">
-                        <h1 class="abeezee-regular" style="color: black; font-size: 30px;">
-                          Electric
-                        </h1>
-                            <div class="bottom_text">
-                                <h1 class="abeezee-regular" style="color: black; font-size: 16px;">
-                                  Merces E450 Cabriolet
-                                </h1>
+          <section>
+            <div><img src="https://s3-alpha-sig.figma.com/img/376f/db17/8a4cb772667c2e3866650054e81bdbdc?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qGHgngRMDUUg1377S6nsBJhotmANyveogrOYEPE~Ipjqb1a0orFgvf6~wCW1wyPR5tHZdE8X4TToVRFlsU-Z02xzmPLqmagygb9TpPnDCDbKurRY06Enr5HHj4LGQjC1ZdWTZpKzR-LuLQex1LM5uuJOA55hQFR26cIxpdPzQZB3xyLVC~nyho7NF0KqZmsDAgdQ7H8Mtod55r5LxhRCOl8-sA7O5CikASTrOBFypHjSHjwgXkTx1gzKz6B1RHUV0282CL-GRz9R0gk0vG1CTbD7YZUcIDvj5GiyBleKrYg21iS8wEyI4UHG17cINGbGbNGCUmJmERpDohnq1Bj35w__" alt="Mercedes CLS"></div>
+              <h1>New Mercedes CLS</h1>
+              <p>The power in your hands</p>
+          </section>
+            <section id="new_cars">
+              <div id="featured_new_car">
+                <div id="white_wrapper">
+                  <div id="gray_card">
+                    <p>Electric</p>
+                      <p>Merces E450 Cabriolet</p>
+                        <div id="image_container">
+                          <img src="https://s3-alpha-sig.figma.com/img/eee9/4730/7b114c15ad3809dd7044529eeab44fd3?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JF0E2wGUshX6VeVR56Hp-FT2qOh4r5G75lpSWEkjsNu~1Kzmhgy8M~4w5DCodTXbyytk6lcqfgU2jvAR387r5-b6ChAFNHMxZFNgdb03yzx8cUd~w~iWm6iaqK~5z1aOdkKwZy184uBbRWEQ35s3jy~psEBNXIg9pFLt21T49qGZYycwUXY7Q45GuhStaTwxu-LjAv9vOt06QpbJhSpKrhL7DzeQalOwoTdoYNh5-0iROPKVSZtGmk3DR2Zb6CJeNg4hPbkWi5zv5DXXrKR7C5OImZ4eAhLyIZ1Y~r36SzQXwGBBR7JOxUvzoQqzkXQs978c8mIPfxN7g1CpM3JzzQ__" alt="Merces E450 Cabriolet">
                             </div>
-                   </div>
-                      <div>
-                          <img class="image_card" src="images/2023-E450-CABRIOLET-AVP-D 1.png" alt="Mercedes Cabriolet" class="card_image">
+                              <div id="image_menu">
+                                <button><p>More Info</p></butto>
+                                  <div id="color_changing_buttons">
+                                <button id="gray"></button>
+                              <button id="red"></button>
+                            <button id="blue"></button>
+                          <button id="black"></button>
+                        </div>
                       </div>
-                          <div class="small_menu">
-                              <button class="more_info">
-                                  <h1 class="abeezee-regular" style="color: black; font-size: 12px;">
-                                      More info
-                                  </h1>
-                              </button>
-                                  <div class="dots">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                  </div>
+                    </div>
+                </div>
+                  <div id="white_wrapper">
+                    <div id="gray_card">
+                      <p>Electric</p>
+                        <p>Merces E450 Cabriolet</p>
+                          <div id="image_container">
+                            <img src="https://s3-alpha-sig.figma.com/img/eee9/4730/7b114c15ad3809dd7044529eeab44fd3?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JF0E2wGUshX6VeVR56Hp-FT2qOh4r5G75lpSWEkjsNu~1Kzmhgy8M~4w5DCodTXbyytk6lcqfgU2jvAR387r5-b6ChAFNHMxZFNgdb03yzx8cUd~w~iWm6iaqK~5z1aOdkKwZy184uBbRWEQ35s3jy~psEBNXIg9pFLt21T49qGZYycwUXY7Q45GuhStaTwxu-LjAv9vOt06QpbJhSpKrhL7DzeQalOwoTdoYNh5-0iROPKVSZtGmk3DR2Zb6CJeNg4hPbkWi5zv5DXXrKR7C5OImZ4eAhLyIZ1Y~r36SzQXwGBBR7JOxUvzoQqzkXQs978c8mIPfxN7g1CpM3JzzQ__" alt="Merces E450 Cabriolet">
+                              </div>
+                                <div id="image_menu">
+                                  <button><p>More Info</p></butto>
+                                    <div id="color_changing_buttons">
+                                  <button id="gray"></button>
+                                <button id="red"></button>
+                              <button id="blue"></button>
+                            <button id="black"></button>
                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="white_wrapper">
+                    <div id="gray_card">
+                      <p>Electric</p>
+                        <p>Merces E450 Cabriolet</p>
+                          <div id="image_container">
+                            <img src="https://s3-alpha-sig.figma.com/img/eee9/4730/7b114c15ad3809dd7044529eeab44fd3?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JF0E2wGUshX6VeVR56Hp-FT2qOh4r5G75lpSWEkjsNu~1Kzmhgy8M~4w5DCodTXbyytk6lcqfgU2jvAR387r5-b6ChAFNHMxZFNgdb03yzx8cUd~w~iWm6iaqK~5z1aOdkKwZy184uBbRWEQ35s3jy~psEBNXIg9pFLt21T49qGZYycwUXY7Q45GuhStaTwxu-LjAv9vOt06QpbJhSpKrhL7DzeQalOwoTdoYNh5-0iROPKVSZtGmk3DR2Zb6CJeNg4hPbkWi5zv5DXXrKR7C5OImZ4eAhLyIZ1Y~r36SzQXwGBBR7JOxUvzoQqzkXQs978c8mIPfxN7g1CpM3JzzQ__" alt="Merces E450 Cabriolet">
+                              </div>
+                                <div id="image_menu">
+                                  <button><p>More Info</p></butto>
+                                    <div id="color_changing_buttons">
+                                  <button id="gray"></button>
+                                <button id="red"></button>
+                              <button id="blue"></button>
+                            <button id="black"></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="white_wrapper">
+                    <div id="gray_card">
+                      <p>Electric</p>
+                        <p>Merces E450 Cabriolet</p>
+                          <div id="image_container">
+                            <img src="https://s3-alpha-sig.figma.com/img/eee9/4730/7b114c15ad3809dd7044529eeab44fd3?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JF0E2wGUshX6VeVR56Hp-FT2qOh4r5G75lpSWEkjsNu~1Kzmhgy8M~4w5DCodTXbyytk6lcqfgU2jvAR387r5-b6ChAFNHMxZFNgdb03yzx8cUd~w~iWm6iaqK~5z1aOdkKwZy184uBbRWEQ35s3jy~psEBNXIg9pFLt21T49qGZYycwUXY7Q45GuhStaTwxu-LjAv9vOt06QpbJhSpKrhL7DzeQalOwoTdoYNh5-0iROPKVSZtGmk3DR2Zb6CJeNg4hPbkWi5zv5DXXrKR7C5OImZ4eAhLyIZ1Y~r36SzQXwGBBR7JOxUvzoQqzkXQs978c8mIPfxN7g1CpM3JzzQ__" alt="Merces E450 Cabriolet">
+                              </div>
+                                <div id="image_menu">
+                                  <button><p>More Info</p></butto>
+                                    <div id="color_changing_buttons">
+                                  <button id="gray"></button>
+                                <button id="red"></button>
+                              <button id="blue"></button>
+                            <button id="black"></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+              <section id="nearest_dealer">
+                <h2 id="punch_line">Find your nearest Mercedes dealer you</h2>
+                <p id="details">Browse over 1000 dealers worldwide, and find the one that best suits your situation.</p>
+              </section>
+            <section id="partner_store">
+              <img src="https://s3-alpha-sig.figma.com/img/9d82/0bdb/2613ab8f946847e657b32f3f2e82ef54?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GiRdWyj7D8rXV7uWFpfC7bUd15roe50vllwXLFj~X-IibfGBc4fpAitHOpFnU3gv~fNfEH~PK~7prfmw~pF0WrUZoOX1~fpd9CyOMZvE26EJYIFvLbdbJUZMj9nGExiZNSqKGKOo1K19SrHYu9rGu5~yUt7qncBJYlmtDThz~2A~VRyZv4F2Y9CdKVGLAsGIQ9LfcKc5fWe0TUISjv~GXLeKnY69SXFGJY17OgBKNOlH8iwBhUxYWRLPiQOBjK5w~sG~fAInE8byhmUFVLV-9nknaT~Ur59-JR1eXe-dKClLn0FlJvcFJq0z6W4wMhGwehDdoUB0fHWUsmiubhNxMQ__" alt="world_map">
+                <div id="text_media_foreground">
+                  <div id="text_media_new_text">
+                    <div id="span">
+                      <h3>Discover your local Mercedes partner store</h3>
+                    </div>
+                      <button id="call_to_action_find_near_store">
+                        <p>Find a partner store near you</p>
+                      </button>
+                  </div>
                 </div>
-                <div class="card">
+            </section id="horizontal_scroll_gallery">
+              <section id="slick_track">
+                  <div id="slick_slide">
+                    <div id="gray_card">
+                      <p id="card_title">Confort</p>
+                        <img src="https://s3-alpha-sig.figma.com/img/1e5e/fbf7/86f84d67b3b9ba17c23cc4e38b336a9e?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GXuPLTU-21wjf~1HF-AuZTiV4jSflA3n6HVian6iAUhG43bA5ThKAu5bnrFVQKE0HUdNaTzHZSq4k~EOJoT6ozwBFyGnzzD9zP090m9LKQ7NywdeyaO9MzZbhGOmPuFRh~nhcD7GhkLgAXR4ZmgI9GW04trXU3KkWbXMHHH9ZM9h-8k1iSN-a8vVfWgtblLoctVG6XyMPuSBt~nn24i~H04yp2kShCzhlB49HKGrajbVxN7DXBSGZOVyYS-Zymx2-SO3QufqLhr0pwvc~W6fg2~Bq6ceXnSkN2nCVJts68OtWsVdgaTMtGDzMVjbzEMavmqtekEcS0UeCociZyCbLg__" alt="mercedes_benz_car_interior">
+                          <button>
+                            <p>More Info</p>
+                          </button>
+                    </div>
+                  </div>
+                  <div id="slick_slide">
+                    <div id="gray_card">
+                      <p id="card_title">Confort</p>
+                        <img src="https://s3-alpha-sig.figma.com/img/b2e1/c63e/d46b7b06b4a2041a2791612208249a59?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Su5LCV3~Mgp~9Mp84byojABn3YUskXADZO-URlPjgAP2waf8ZEO~b4nMBnc9e4cOS9wYmNV~ai6R1NdMCjCInNHmeKXtadZeb8qFyu0KIMEj-mwVdHCOGr7c-FN66ECpgDqQ2SFVDQfYrTUZw5XVyv3cOxmZB17IPS6vR7aDHLQgCWhuw0601yuj2GJo-KkKvz3aIJsXgzJfjGEBbyKl-O4lzNbGRNPU1uBkWN1sThjt8TUP0XYlX8V3NM9tFfsrVrgBViwK8yQWUYYqmfNwBNC43V4iwtunH~YdYs0PRbygVOSyl6uHDPDd6xuDKx2tVVaDHljv3IMTgDJigU9LIw__" alt="mercedes_benz_car_frrontal_lights">
+                          <button>
+                            <p>More Info</p>
+                          </button>
+                    </div>
+                  </div>
+                  <div id="slick_slide">
+                    <div id="gray_card">
+                      <p id="card_title">Confort</p>
+                        <img src="https://s3-alpha-sig.figma.com/img/26a0/cc51/d34ad18f8596877d083b68cb0cc47859?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nrW2TW0wf-tLuKoB1Ey1zLsRo~vb~x5VZMlh2LLBpUBAA5Cp7dBT9h-cYvd8Jstv7dwFns6BakJvZOmKW6PKtwueUBrV1LoIldR5Pi~5vsPkFbojFiuXV6diLBmbpXPgYdSuPYYUywabthWZLvQeaphBj0JxM8TT29NXCUU-cGzmA3syr83ExCw6UFSooJq19q8EwZIC26o~6dFD6Yn964ecQegFiW9AhS4uuJVWkTxt2sngYu5ZsGhI6C85JlTrsQA9ECK36AAmI4gFiHwyO6~ffEOOaW7onoTdDbYVLircSF60FGvZAzBR7ICvInNNAsYn7VHDthtPICPy65FRZw__" alt="mercedes_car_interior_screen">
+                          <button>
+                            <p>More Info</p>
+                          </button>
+                    </div>
+                  </div>
+                <div id="lateral_scroll"></div>
+              </section>
+            <section id="car_design">
+              <div id="car_image">
+                <img src="https://s3-alpha-sig.figma.com/img/8561/28c5/8d829e7e21bdcd199c7a456b16469c06?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=G3y2XUSoKMukTtcQI~PhZGQHfO0V3HuRo7ks3EW6GH~0aKkT6TiI5zqAyMJNlpdci56HLmG3BNEwV233d-DKPyKBtxM9tLEs8Xz06iYPprF4BhK5xnd5rhM4GCIpYHpQ7MYQ2GwLbZa3Dlxa5dtO28CD1RpPTsg0LBuo4aYZgPwiQHLgcgVYn0ZbRt27oxpHWeRjY1JhfsHWAwx2wj5N3dPZ8ZgnskpD53pnkcyhK5ONmzKN7~ZTfDa2XXhoJIbFzi5QZpkVjCE2txXvF0jNZScdqkTrpq5FQef-HR0aVYLU-N6F-N9qg5J6ku3wT1P~28yRbw0SG5yV1C-2CT1tWA__" alt="Mercedes_Benz_red">
+                  <h3 id="title_image">Red as tentation</h3>
+                <p>Good design is what drives us, and we're
+                  proud to share that Mercedes-Maybach has
+                  already won the prestigious Best Design 
+                  Award 2023, as judged by the world's best
+                  product designers.</p>
+              </div>
+            </section>
+              <section id="wheel_program">
+                <div id="wrapper">
+                  <div id="text_media_static_foreground">
+                    <h3>The Mercedes-Maybach wheel programme</h3>
+                      <p>The exclusive Mercedes-Maybach wheel programme, e.g. with optional 53.3 cm (21") Maybach forged wheels in multi-spoke design.</p>
+                    <a id="menu_item" href="https://group.mercedes-benz.com/company/tradition/founders-pioneers/wilhelm-maybach.html">Learn More</a>
+                  </div>
+                    <div>
+                      <img src="https://s3-alpha-sig.figma.com/img/4cf4/1d41/71018354acff7cdbe0a029d1cb426134?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=DgPZMH2S2O8mK6i-opYBbY1oEWc1z0d6snJtR2cYWZWhWDkPkz8BThrYpQaEaOLkujNWDMq-58DVOoxqX1TZyULnqgDPX6POLlKlT4Wx9z0r-Ze2fub3~pVp2-mbd1XrrN7KBpP7~x5ghZ3tcS1oqWiDQdEObsSrZ0T31n9CXDkktcre0oxKUya0Zj3JNhp4sGd4mJjTfTWsXtrmBbC0YV4CH-CIcFyoakssMnQ6Z3sjPtlilNRFc28HxTH0WYy1rHC~GBUwxLSc8Q2PROIFyOGUKtWW8p~blsss9ad7E5j8Qrjq5-tedIO7TqH6DRLTMXQM2wYkaoTvzWzVmdBqeg__" alt="mercedes_benz_red_car_wheel">
+                    </div>
                 </div>
-                <div class="card">
-                </div>
-                <div class="card">
-                </div>
-            </div>
-        </main>
-          
-        <div class="dealer">
-          <h1 class="big_text_dealer">
-            Find your nearest  Mercedes dealer
-          </h1>
-          <p class="small_text_dealer">
-            Browse over 1000 dealers worldwide, and find the one that best suits your situation.
-          </p>
-        </div>
-        <div  class="div_world_map">
-          <img class="world_map" src="images/world_map.png" alt="world map">
-          <box class="">
-            <h3 class="big_text_world_map">Discover your local Mercedes partner store</h3>
-            <button class="button_world_map">Find a partner store near you</button>
-          </box>
-        </div>
-        <div class="carousel">
-          <div class="horizontal_scroll">
-
-          </div>
-        </div>
-        <div class="div_red_car">
-          <img class="red_car" src="images/red_car.png" alt="Red Mercedes">
-              <h3 class="top_left_red_car">Red as tentation</h3>
-                  <p class="top_left_small_red_car">Good design is what drives us, and we're proud to share that Mercedes-Maybach has already won the prestigious Best Design Award 2023, as judged by the world's best product designers.</p>
-                </div>
-        <div class="div_mercedes_maybach">
-          <div class="div_text_mercedes_maybach"> 
-            <h3 class="big_text_mercedes_maybach">The Mercedes-Maybach wheel programme</h3>
-            <p class="small_text_mercedes_maybach">The exclusive Mercedes-Maybach wheel programme, e.g. with optional 53.3 cm (21") Maybach forged wheels in multi-spoke design.</p>
-            <button  class="button_mercedes_maybach">Learn More</button>
-          </div>
-          <div class="div_img_mercedes_maybach">
-            <img class="img_mercedes_maybach" src="images/red_car_wheel.png" alt="">
-          </div>
-        </div>
-        <section class="gray_section">
-          <p>Ready to own the car of your dreams?. Mercedes-Maybach are now available in available at our dealers by appointment only.</p>
-          <button class="gray_section_button">CONTACT NOW</button>
-        </section>
+              </section>
       </body>
-    <footer>
-
+    <footer class="" style="height: 30%;">
+      <div id="direct_contact">
+        <p>Ready to own the car of your dreams?. Mercedes-Maybach are now available in
+          available at our dealers by appointment only.</p>
+          <button id="contact_now_call_to_action">
+            <p>Contact Now</p>
+          </button>
+      </div>
+      <div id="email_subscription_container">
+        <p id="title">Join the Mercedes Benz official newsletter</p>
+          <div id="input_field">
+            <p id="email_address_placeholder">Enter your email address here</p>
+          </div>
+            <button id="subscribe_button">
+              <p>Subscribe</p>
+            </button>
+              <div id="privacy_policy_container">
+                <div id="check_box"></div>
+                  <p id="privacy_policy">By signing up, I agree to the <a id="menu_item" href="https://group.mercedes-benz.com/privacy/">privacy policy</a> of Mercedes Benz.</p>
+              </div>
+                <div id="social_media_logos">
+                  <img src="" alt="Facebook">
+                  <img src="" alt="Instagram">
+                  <img src="" alt="YouTube">
+                  <img src="" alt="LinkedIn">
+                  <img src="" alt="TikTok">
+                </div>
+      </div>
+      <div id="footer_menus">
+        <div id="Explorer">
+          <p id="title">Company</p>
+            <a id="menu_item" href="https://group.mercedes-benz.com/company/at-a-glance.html">Overview</a>
+            <a id="menu_item" href="https://jobs.mercedes-benz.com/en">Job Search</a>
+            <a id="menu_item" href="https://group.mercedes-benz.com/investors/share/">Shares</a>
+            <a id="menu_item" href="https://group.mercedes-benz.com/careers/about-us/locations/">Locations</a>
+            <a id="menu_item" href="https://media.mercedes-benz.com/">Media Site</a>
+            <a id="menu_item" href="https://group.mercedes-benz.com/contact/">Contact</a>
+        </div>
+          <div id="Knowledge">
+            <p id="title">Knowledge</p>
+              <a id="menu_item" href="https://group.mercedes-benz.com/investors/esg/">ESG</a>
+              <a id="menu_item" href="https://group.mercedes-benz.com/company/mercedes-benz-ip/">Intellectual Property</a>
+              <a id="menu_item" href="https://group.mercedes-benz.com/company/tradition/">Tradition</a>
+              <a id="menu_item" href="https://group.mercedes-benz.com/careers/international-talent-programs/">Talent Programs</a>
+          </div>
+            <div id="Business Services">
+              <p id="title">Business Services</p>
+                <a id="menu_item" href="https://group.mercedes-benz.com/company/suppliers/">Suppliers</a>
+                <a id="menu_item" href="https://data.mercedes-benz.com/">Data & APIs for Developers</a>
+                <a id="menu_item" href="https://opensource.mercedes-benz.com/">Mercedes-Benz Open Source</a>
+                <a id="menu_item" href="https://group.mercedes-benz.com/sustainability/society-governance/compliance-integrity/bpo.html">Whistleblower System (BPO)</a>
+            </div>
+            <div id="Purchase">
+              <p id="title">Purchase</p>
+                <a id="menu_item" href="https://www.mercedes-benz.es/passengercars/models.html">Vehicles</a>
+                <a id="menu_item" href="https://accessories.mercedes-benz.com/es-ES">Accessories</a>
+                <a id="menu_item" href="https://www.mercedes-benz.es/passengercars/buy/digital-extras-overview.html">Digital Extras</a>
+                <a id="menu_item" href="https://www.mercedes-benz.com/en/vehicles/mercedes-benz-classic/classiccenter/">Classic Cars</a>
+            </div>
+        <div id="Help"></div>
+      </div>
     </footer>
 </html>
-
-
-
-<!-- 
-
-<picture>
-                    <source media="(min-width: 1439px)"
-                            srcset="XL_Mercedes_CLS.png"/>
-                    <source media="(min-width: 767px) and (max-width: 1440px)"
-                            srcset="L_Mercedes_CLS.png" />
-                    <source media="(min-width: 319px) and (max-width: 768px)"
-                            srcset="M_Mercedes_CLS.png" />
-                    <source media="(min-width: 200px) and (max-width: 320px)"
-                            srcset="M_Mercedes_CLS.png" />       
-                    <img src="images/XL_Mercedes_CLS.png" alt="HTML5 medium" />
-                </picture>
-
-<img src="images/Mercedes CLS.png" alt="New Mercedes CLS" width="100%"; height="549px">
- -->

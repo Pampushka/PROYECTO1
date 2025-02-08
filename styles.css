@@ -1,553 +1,75 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
-    color: var(--rtc-color-100);
+    font-family: "ABeeZee", sans-serif;
+}
+.body {
+  height: 100vh;
+  background-color: #F5F5F5;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    display:contents;
-    position:absolute;
-    background-color: #EEEEEE;
-}
+/*! Use background-image for text on top of an image!!! 
+background-size: cover;
+background-position: center;
+*/
 
-header {
-    display: flex;
-    width: 100vw;
-    height: 3.125rem;
-    justify-content: space-between;
-    gap: 65.3%;
-    background-color: #EEEEEE;
-}
-
-.left_buttons {
+li {
+  list-style: none;
   display: flex;
-  justify-content: end;
-  width: 30.6%;
-  height: 49px;
-  max-height: 49px;
-  min-height: 49px;
-  align-content: start;
-  font-family: Abeezee regular, sans-serif;
+  flex-direction: row;
 }
 
-.logo_button {
-  width: fit-content; 
-  min-width: 72.35px;
-  height: 49px; 
-  max-height: 49px;
-  min-height: 49px;
-  padding-top: 9.5px; 
-  padding-right: 42.35px; 
-  padding-bottom: 9.5px; padding-left: 42.35px; 
-  background-color: #EEEEEE; 
-  border: none;
-  align-content: center;
+a {
+  text-decoration: none;
+  color: #141615;
+  font-size: 1rem;
 }
 
-.logo_image {
-  width: 30px; height: 30px; align-self: center;
+a:hover {
+  color: darkred;
+  font-display: bold;
 }
 
-.electric {
-  width: fit-content; 
-  height: 49px; 
-  padding-top: 17px; 
-  padding-right: 7.9px; 
-  padding-bottom: 17px; 
-  padding-left: 7.9px; 
-  background-color: #EEEEEE; 
-  border: none; 
-  align-content: center;
-}
-
-.maybach{
-  width: fit-content; 
-  height: 49px; 
-  padding-top: 17px; 
-  padding-right: 7.9px; 
-  padding-bottom: 17px; 
-  padding-left: 7.9px; 
-  background-color: #EEEEEE; 
-  border: none; 
-  align-content: center;
-} 
-
-.accessories {
-  width: fit-content; 
-  height: 49px; 
-  padding-top: 17px; 
-  padding-right: 7.9px; 
-  padding-bottom: 17px; 
-  padding-left: 7.9px; 
-  background-color: #EEEEEE; 
-  border: none; 
-  align-content: center;
-}
-
-.stores {
-  width: fit-content; 
-  height: 49px; 
-  padding-top: 17px; 
-  padding-right: 7.9px; 
-  padding-bottom: 17px; 
-  padding-left: 7.9px; 
-  background-color: #EEEEEE; 
-  border: none; 
-  align-content: center;
-}
-
-h5 {
-  font-size: 10px; 
-  font-family: inherit; 
-  margin: 1px; 
-  color: #141615; 
-  align-self: center; 
-  text-align: center;
-}
-
-.right_buttons {
+.navbar {
+  width: 100%;
+  height: 3.125rem;
+  margin: 0;
   display: flex;
-  justify-content: flex-end;
-  width: 100%; 
-  height: 49px; 
-  align-content: center;
-  font-family: Abeezee regular, sans-serif;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden
 }
 
-.wrapper {
+.home {
+  width: 7.169rem;
+  height: 100%;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 191.79px;
-  max-height: 49px;
-  height: 100%;
-}
-
-.user_button {
-  width: fit-content; 
-  height: 49px; 
-  padding-top: 15.17px; 
-  padding-right: 20px; 
-  padding-bottom: 15.17px; 
-  padding-left: 20px; 
-  background-color: #EEEEEE; 
-  border: none;
-  align-content: center;
-}
-
-.image_user{
-  width: 21.1px; 
-  height: 18.66px; 
-  align-self: center;
-}
-
-.cart_button {
-  width: fit-content; 
-  height: 49px; 
-  padding-top: 16.6px; 
-  padding-right: 20px; 
-  padding-bottom: 16.5px; 
-  padding-left: 20px; 
-  background-color: #EEEEEE; 
-  border: none;
-  align-content: center;
-}
-
-.image_cart {
-  width: 21.67px; 
-  height: 16px; 
-  align-self: center;
-}
-
-.placeholder {
-  width: 100%;
-  max-width: 61.1px;
-  min-width: none;
-  height: 49px; 
-}
-
-.main_image {
-  width: 100vw;
-  height: auto;
-  position: relative;
-  text-align: center;
-  color: #EEEEEE;
-  display: block;
-  margin: auto;
-}
-
-.background_image {
-  width: 100vw;
-  height: 30%;
-}
-
-.top_left {
-  position: absolute;
-  top: 7.813rem;
-  left: 3.125rem;
-  font-size: 4.375rem;
-  font-weight: 400;
-  color: #F5F5F5;
-}
-
-.top_left_small {
-  position: absolute;
-  top: 225px;
-  left: 50px;
-  font-size: 22px;
-  font-weight: 400;
-  color: #F5F5F5;
-}
-
-.section_cards {
-  background-color: #F5F5F5;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 5%;
-  width: 100vw; 
-  height: 81.188rem;
-  align-content: center;
-  padding-top: 2.5rem; 
-  padding-right: 50px; 
-  padding-bottom: 2.5rem; 
-  padding-left: 3.125rem; 
-  column-gap: 4.063rem;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 15px;
-  border-radius: 15px;
-  width: 636.98px; 
-  height: 34.813rem; 
-  border-radius: 15px; 
   align-items: center;
-  background-color: #D9D9D9;
-  padding-top: 50px; 
-  padding-right: 50px; 
-  padding-bottom: 50px; 
-  padding-left: 50px;
 }
 
-.top_text {
-  width: 576.98px;
-  height: 91px;
-  position: relative;
-  text-align: start;
-  bottom: 10px;
+.logo {
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
-.bottom_text{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.image_card{
-  align-self: center;
-  width: 31.561rem; 
-  height: 19.625rem;
-}
-
-.card_image {
-  width: 100%;
-  max-width: 347px;
-  height: auto;
-}
-
-.small_menu {
-  width: 100vw;
+.links {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 5rem;
-  align-content: center;
-}
-
-.more_info  {
-  width: 7rem;
-  height: 3rem;
-  border-radius: 3rem;
-  color: #FFFFFF;
-  border: none;
-}
-
-.dots {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   gap: 2rem;
 }
 
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: black;
-  border-radius: 50%;
-  display: inline-block;
-  border-color: #FFFFFF;
-  
-}
-
-.dealer {
-  width: 100vw;
-  height: auto;
-  text-align: left;
-  display: block;
-  margin: auto;
-  padding-left: 3.125rem;
-  padding-right: 40%;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
-}
-
-.big_text_dealer {
-  font-family: Abhaya Libre;
-  top: 70%;
-  left: 10%;
-  font-size: 6rem;
-  font-weight: 400;
-  color: black;
-}
-
-.small_text_dealer {
-  font-family: AbeeZee;
-  top: 80%;
-  left: 10%;
-  right: 40%;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: left;
-  color: black;
-}
-
-.div_world_map {
-  width: 100vw;
-  height: auto;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  display: block;
-  margin: auto;
-}
-
-.world_map {
-  width: 100vw;
-  height: auto;
-  position: relative;
-}
-
-.div_text_world_map {
-  width: 30%;
-  height: 30%;
-  position: absolute;
-  align-self: center;
-  color: #F5F5F5;
-  opacity: 20%;
-}
-
-.big_text_world_map {
-  position: absolute;
-  font-family: AbeeZee;
-  top: 40%;
-  left: 10%;
-  right: 60%;
-  bottom: 10%;
-  text-align: left;
-  font-size: 3.125rem;
-  font-weight: 400;
-  box-shadow: #F5F5F5;
-  color: #F5F5F5;
-}
-
-.button_world_map {
-  position: absolute;
-  font-family: AbeeZee;
-  top: 60%;
-  left: 10%;
-  right: 70%;
-  padding-top: 1.313rem;
-  padding-bottom: 1.125rem;
-  padding-right: 1.938rem;
-  padding-left: 1.938rem;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-  color: black;
-  background-color: #F5F5F5;
-  border: none;
-  border-radius: 2rem;
+.image_buttons {
+  width: 11.987rem;
 }
 
 
-
-.carousel {
-  width: 100vw;
-  height: 586px;
-  background-color: #F5F5F5;
+.bars {
+  width: 1.313rem;
+  height: 1 rem;
 }
 
-.horizontal_scroll {
-  width: 90%;
-  height: 5%;
-  overflow: auto;
-  white-space: nowrap;
-  background-color: #D9D9D9;
-  align-self: baseline;
-}
 
-.carousel_card {
-  width: 100vw;
-  height: 30%;
-}
-
-.div_red_car {
-  width: 100vw;
-  height: auto;
-  position: relative;
-  text-align: center;
-  display: block;
-  margin: auto;
-}
-
-.red_car {
-  width: 100vw;
-  height: auto;
-}
-
-.top_left_red_car {
-  position: absolute;
-  font-family: AbeeZee;
-  top: 67.5%;
-  left: 10%;
-  font-size: 3.125rem;
-  font-weight: 400;
-  color: #F5F5F5;
-}
-
-.top_left_small_red_car {
-  position: absolute;
-  font-family: AbeeZee;
-  top: 77.5%;
-  left: 10%;
-  right: 70%;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-  color: #F5F5F5;
-}
-
-.small_text_red_car {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.313rem;
-  position: absolute;
-}
-
-.div_mercedes_maybach{
-    width: 100vw;
-    height: 40%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    margin: auto;
-    padding-left: 10%;
-    align-items: center;
-  }
-
-  .div_text_mercedes_maybach {
-    font-family: AbeeZee;
-    top: 77.5%;
-    left: 10%;
-    right: 70%;
-    align-items: center;
-    text-align: left;
-    color: black;
-  }
-
-  .big_text_mercedes_maybach {
-    font-size: 3.125rem;
-    line-height: 3.125rem;
-    font-weight: 400;
-    margin-block-end: 15%;
-  }
-
-  .small_text_mercedes_maybach {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.313rem;
-    margin-block-end: 15%;
-  }
-
-  .button_mercedes_maybach {
-    font-family: AbeeZee;
-    top: 60%;
-    left: 10%;
-    right: 70%;
-    padding-top: 1.313rem;
-    padding-bottom: 1.125rem;
-    padding-right: 1.938rem;
-    padding-left: 1.938rem;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-    color: black;
-    background-color: #F5F5F5;
-    border: none;
-    border-radius: 2rem;
-  }
-
-  .div_img_mercedes_maybach {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-right: 2%;
-  }
-
-  .img_mercedes_maybach {
-    width: fit-content;
-    height: auto;
-  }
-
-  .gray_section {
-    width: 100vw;
-    height: 8.125rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    row-gap: 10%;
-    left: 30%;
-    right: 30%;
-    background-color: #404243;
-  }
-
-  .gray_section_button {
-    width: 12.5rem;
-    height: 3.125rem;
-    font-family: AbeeZee;
-    padding-top: 0.9rem;
-    padding-bottom: 0.9rem;
-    padding-right: 1.938rem;
-    padding-left: 1.938rem;
-    font-size: 14px;
-    font-weight: 400;
-    align-items: center;
-    color: black;
-    background-color: #F5F5F5;
-    border: none;
-    border-radius: 2rem;
-  }
 
 .abeezee-regular {
     font-family: "ABeeZee", sans-serif;
