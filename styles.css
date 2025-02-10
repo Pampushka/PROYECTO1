@@ -144,18 +144,153 @@ a:hover {
   width: 100%;
 }
 
-.featured_new_car {
-  width: 100vw;
-  text-align: center;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 2rem;
+.nearest_dealer_div {
+  padding: 10%;
+  gap: 10%;
 }
 
-.card {
-  background-color: #D9D9D9
-  ;
+.nearest_dealer_div_p {
+  padding-top: 10%;
 }
+
+.nearest_dealer_title {
+  font-size: 4.375rem;
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nearest_dealer_p {
+  font-size: 1.5rem;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title_main_image {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.375rem;
+  top: 7%;
+  left: 7%;
+  position: absolute;
+  color: #F5F5F5;
+}
+
+.small_text_main_image {
+  font-size: 1rem;
+  top: 12%;
+  left: 7%;
+  position: absolute;
+  color: #F5F5F5;
+}
+
+@media(max-width: 375px){
+  .title_main_image{
+    font-size: 1.5rem;
+    top: 8%;
+  }
+
+  .small_text_main_image {
+    font-size: 0.875rem;
+    top: 9.2%;
+  }
+  }
+
+.featured_new_cars {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+@media(max-width: 375px){
+  .featured_new_cars{
+    display: grid;
+    grid-template-columns: auto
+  }
+  }
+
+.card {
+  background-color: #ffffff;
+  width: 41.061rem;
+  height: 36.063rem;
+  padding: 0.5rem;
+}
+
+.gray_card {
+  background-color: #D9D9D9;
+  width: 39.811rem;
+  height: 34.813rem;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10%;
+}
+
+.card_title {
+  font-size: 1.875rem;
+}
+
+.card_subtitle {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.card_image_container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.image_menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card_button_div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.card_button {
+  width: 6.262rem;
+  height: 2.813rem;
+  border-radius: 2.813rem;
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.color_changing_buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.round_button {
+  width: 3.438rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  border: none;
+}
+
+
+
 
 /*  
 .main_image {
