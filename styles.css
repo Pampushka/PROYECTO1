@@ -311,12 +311,12 @@ a:hover {
 }
 
 .card_button {
-  width: 2.5rem;
-  height: 2.5rem;
-  
+  width: 6.262rem;
+  height: 2.813rem;
   border: none;
   background-color: white;
   color: black;
+  border-radius: 2.813rem;
 }
 
 .color_changing_buttons {
@@ -325,11 +325,55 @@ a:hover {
   align-items: flex-end;
 }
 
-.round_button {
+.round_button_div {
+  width: 3.438rem;
+  height: 2.5rem;
+  display: flex;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.round_button_gray {
   width: 3.438rem;
   height: 2.5rem;
   border-radius: 70%;
-  border: none;
+  border-color: #141615;
+  background-color: #C5C5C5;
+  border-width: 0.2rem;
+  border-style: double;
+  list-style: none;
+  position: relative;
+}
+
+.round_button_red {
+  width: 3.438rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  border-color: white;
+  border-width: 0.2rem;
+  background-color: #B20000;;
+  position: relative;
+}
+
+.round_button_blue {
+  width: 3.438rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  border-color: white;
+  list-style: none;
+  border-width: 0.2rem;
+  background-color: blue;
+  position: relative;
+}
+
+.round_button_black {
+  width: 3.438rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  border-color: white;
+  border-width: 0.2rem;
+  background-color:black;
+  position: relative;
 }
 
 .world_map_div {
@@ -395,6 +439,77 @@ position: relative;
   left: 15%;
 }
 
+.horizontal_scroll_gallery {
+  height: 36.625rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 3%;
+  overflow: hidden;
+}
+
+.horizontal_cards {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20%;
+  overflow: hidden;
+}
+
+.horizontal_card_wrapper {
+  width: 37.72rem;
+  height: 32.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.horizontal_card {
+  width: 33.75rem;
+  height: 30.563rem;
+  background-color: #D9D9D9;
+  border-radius: 1rem;
+  padding: 1.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal_cards_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 6%;
+}
+
+.horizontal_card_image_container {
+  width: 30rem;
+  height: 16.875rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.horizontal_image_menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2.4rem;
+}
+
+.scroll_wrapper {
+  width: 84.875rem;
+  height: 2.188rem;
+  display: flex;
+  align-items: center
+}
+
+.scroll {
+  width: 84.875rem;
+  height: 0.938rem;
+  background-color: #D9D9D9;
+  border-radius: 0.813rem;
+}
 
 
 footer {
