@@ -43,6 +43,7 @@ a:hover {
   align-items: center;
   position: relative;
   cursor: pointer;
+  padding: 1%;
 }
 
 .home {
@@ -145,12 +146,21 @@ a:hover {
 }
 
 .nearest_dealer_div {
-  padding: 10%;
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
   gap: 10%;
 }
 
 .nearest_dealer_div_p {
-  padding-top: 10%;
+  padding-bottom: 5%;
+  width: 40%;
+}
+
+.nearest_dealer_title_div {
+  display: flex;
+  align-items: flex-start;
+  width: 60%;
 }
 
 .nearest_dealer_title {
@@ -166,6 +176,39 @@ a:hover {
   font-weight: 400;
   font-style: normal;
 }
+
+@media(max-width: 375px){
+  .nearest_dealer_div {
+    padding: 3%;
+    gap: 10%;
+  }
+
+  .nearest_dealer_title_div {
+    display: flex;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .nearest_dealer_div_p {
+    padding-top: 5%;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .nearest_dealer_title {
+    font-size: 3.75rem;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nearest_dealer_p {
+    font-size: 1.5rem;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  }
 
 .title_main_image {
   font-family: "Abhaya Libre", serif;
@@ -288,6 +331,81 @@ a:hover {
   border-radius: 70%;
   border: none;
 }
+
+.world_map_div {
+  display: flex;
+  text-align: center;
+}
+
+.world_map_div {
+background-image: url(images/world_map.png);
+background-size: cover;
+background-position: center;
+height: 49.438rem;
+display: flex;
+flex-direction: row;
+align-items: center;
+position: relative;
+}
+
+.world_map_div_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+}
+
+.world_image_white_div {
+  width: 29.118rem;
+  height: 17.188rem;
+  background-color: #F5F5F5;
+  border-radius: 0.875rem;
+  opacity: 20%;
+}
+
+.world_image_text_div {
+  position: absolute;
+  font-size: 2.125rem;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  color: #F5F5F5;
+}
+
+.world_map_button {
+  width: 15.881rem;
+  height: 3.188rem;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F5F5;
+  color: black;
+  position: absolute;
+  border-radius: 5rem;
+}
+
+
+
+footer {
+  height: 59.313rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.direct_contact {
+  width: 100%;
+  height: 8.125rem;
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
