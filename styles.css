@@ -292,9 +292,16 @@ a:hover {
 }
 
 .card_image_container {
+  width: 36.625rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.card_main_image {
+  height: fit-content;
 }
 
 .image_menu {
@@ -337,12 +344,21 @@ a:hover {
   width: 3.438rem;
   height: 2.5rem;
   border-radius: 70%;
-  border-color: #141615;
+  border-color: white;
   background-color: #C5C5C5;
   border-width: 0.2rem;
-  border-style: double;
+  border-style: solid;
   list-style: none;
   position: relative;
+}
+
+.round_button_gray:hover {
+  background-color: #a8a8a8;
+}
+
+.round_button_gray:focus {
+  outline: #141615;
+  box-shadow: 0 0 0 3px rgb(107, 107, 107);
 }
 
 .round_button_red {
@@ -351,8 +367,18 @@ a:hover {
   border-radius: 70%;
   border-color: white;
   border-width: 0.2rem;
-  background-color: #B20000;;
+  border-style: solid;
+  background-color: #B20000;
   position: relative;
+}
+
+.round_button_red:hover {
+  background-color: #890101;
+}
+
+.round_button_red:focus {
+  outline: #141615;
+  box-shadow: 0 0 0 3px rgb(107, 107, 107);
 }
 
 .round_button_blue {
@@ -362,8 +388,18 @@ a:hover {
   border-color: white;
   list-style: none;
   border-width: 0.2rem;
-  background-color: blue;
+  border-style: solid;
+  background-color: #0010A1;
   position: relative;
+}
+
+.round_button_blue:hover {
+  background-color: #000d7e;
+}
+
+.round_button_blue:focus {
+  outline: #141615;
+  box-shadow: 0 0 0 3px rgb(107, 107, 107);
 }
 
 .round_button_black {
@@ -372,8 +408,18 @@ a:hover {
   border-radius: 70%;
   border-color: white;
   border-width: 0.2rem;
+  border-style: solid;
   background-color:black;
   position: relative;
+}
+
+.round_button_black:hover {
+  background-color: #000000;
+}
+
+.round_button_black:focus {
+  outline: #141615;
+  box-shadow: 0 0 0 3px rgb(107, 107, 107);
 }
 
 .world_map_div {
