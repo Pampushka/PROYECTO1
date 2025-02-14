@@ -663,12 +663,32 @@ footer {
 .direct_contact {
   width: 100%;
   height: 8.125rem;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: gray;
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.direct_contact_text_div {
+  width: 45rem;
+  height: 2.649rem;
+  justify-content: flex-start;
+}
+
+a.direct_contact_button {
+  width: 12.5rem;
+  height: 3.125rem;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 3.75rem;
+  border: none;
+  background-color: white;
+  color: #000000;
 }
 
 
