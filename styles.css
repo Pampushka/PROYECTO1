@@ -423,11 +423,6 @@ a:hover {
 }
 
 .world_map_div {
-  display: flex;
-  text-align: center;
-}
-
-.world_map_div {
 background-image: url(images/world_map.png);
 background-size: cover;
 background-position: center;
@@ -485,6 +480,8 @@ position: relative;
   left: 15%;
 }
 
+/* HORIZONTAL CARDS */
+
 .horizontal_scroll_gallery {
   height: 36.625rem;
   display: flex;
@@ -517,6 +514,7 @@ position: relative;
   padding: 1.9rem;
   display: flex;
   flex-direction: column;
+  margin-right: 3.5rem;
 }
 
 .horizontal_cards_text {
@@ -533,6 +531,12 @@ position: relative;
   flex-direction: column;
   padding-bottom: 5%;
   text-align: center;
+}
+
+.horizontal_card_image {
+  width: 30rem;
+  height: 16.875rem;
+  object-fit: cover;
 }
 
 .horizontal_image_menu {
@@ -557,6 +561,53 @@ position: relative;
   border-radius: 0.813rem;
 }
 
+/* RED CAR */
+
+.red_car_div {
+  background-image: url(images/red_car.png);
+  background-size: cover;
+  background-position: center;
+  height: 49.438rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  }
+  
+  .red_car_div_content {
+    width: 31.638rem;
+    height: 12.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    padding-left: 7%;
+    margin-top: 15%;
+  }
+  
+  .red_car_text {
+    position: absolute;
+    font-size: 3.125rem;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: #F5F5F5;
+  }
+
+  .red_car_small_text_div {
+    width: 19.375rem;
+    position: relative;
+  }
+
+  .red_car_small_text {
+    position: absolute;
+    font-size: 0.875rem;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: #F5F5F5;
+  }
 
 footer {
   height: 59.313rem;
