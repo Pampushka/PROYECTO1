@@ -558,58 +558,6 @@ a:hover {
   .color_changing_buttons {
     display: none;
   }
-  
-  .round_button_div {
-    display: none;
-  }
-  
-  .round_button_gray {
-    display: none;
-  }
-  
-  .round_button_gray:hover {
-    display: none;
-  }
-  
-  .round_button_gray:focus {
-    display: none;
-  }
-  
-  .round_button_red {
-    display: none;
-  }
-  
-  .round_button_red:hover {
-    display: none;
-  }
-  
-  .round_button_red:focus {
-    display: none;
-  }
-  
-  .round_button_blue {
-    display: none;
-  }
-  
-  .round_button_blue:hover {
-    display: none;
-  }
-  
-  .round_button_blue:focus {
-    display: none;
-  }
-  
-  .round_button_black {
-    display: none;
-  }
-  
-  .round_button_black:hover {
-    display: none;
-  }
-  
-  .round_button_black:focus {
-    display: none;
-  }
   }
 
 /* WORLD MAP */
@@ -670,6 +618,68 @@ position: relative;
   top: 73%;
   left: 15%;
 }
+
+/* WORLD MAP RESPONSIVE */
+@media(max-width: 375px){
+  .world_map_div {
+    background-image: url(images/world_map.png);
+    background-size: cover;
+    background-position: center;
+    height: 20.563rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    }
+    
+    .world_map_div_content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .world_image_white_div {
+      width: 21.25rem;
+      height: 16.563rem;
+      display: flex;
+      flex-direction: column;
+      background-color: #A2A2A282;
+      border-radius: 0.875rem;
+      opacity: 51%;
+      padding: 7%;
+      position: relative;
+    }
+    
+    .world_image_text_div {
+      width: 15.813rem;
+      height: 6.938rem;
+      position: absolute;
+      font-size: 1.25rem;
+      font-family: "ABeeZee", sans-serif;
+      font-weight: 400;
+      font-style: thin;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: #F5F5F5;
+      top: 2rem;
+    }
+    
+    .world_map_button {
+      width: 15.881rem;
+      height: 3.188rem;
+      border: none;
+      justify-content: center;
+      align-items: center;
+      background-color: #F5F5F5;
+      color: black;
+      position: absolute;
+      border-radius: 5rem;
+    }
+  }
 
 /* HORIZONTAL CARDS */
 
