@@ -135,15 +135,104 @@ a:hover {
   }
 }
 
+/* MAIN IMAGE */
 .main_image_div {
-  width: 100vw;
+  background-image: url(images/M_Mercedes_CLS.png);
+  background-size: cover;
+  background-position: center;
+  height: 49.438rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   position: relative;
-  text-align: center;
-}
+  }
+  
+  .main_image_div_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 3%;
+  }
+  
+  .main_image_text_div {
+    width: 35rem;
+    height: 8.75rem;
+    padding-left: 3%;
+    padding-top: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #F5F5F5;
+  }
 
-.main_image {
-  width: 100%;
-}
+  .title_main_image{
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.375rem;
+    top: 8%;
+  }
+
+  .small_text_main_image {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    top: 9.2%;
+  }
+
+/* RESPONSIVE MAIN IMAGE */
+@media(max-width: 375px){
+  .main_image_div {
+    background-image: url(images/M_Mercedes_CLS.png);
+    background-size: cover;
+    background-position: center;
+    height: 12.938rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    }
+    
+    .main_image_div_content {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      padding-left: 3%;
+    }
+    
+    .main_image_text_div {
+      width: 20.063rem;
+      height: 2.5rem;
+      padding-left: 2.2rem;
+      padding-top: 9.2rem;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      color: #F5F5F5;
+    }
+  
+    .title_main_image{
+      font-family: "Abhaya Libre", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.5rem;
+     
+    }
+  
+    .small_text_main_image {
+      font-family: "Abhaya Libre", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.875rem;
+      
+    }
+  }
+
+  /* NEAREST DEALER */
 
 .nearest_dealer_div {
   padding-top: 2%;
@@ -210,37 +299,7 @@ a:hover {
   }
   }
 
-.title_main_image {
-  font-family: "Abhaya Libre", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 4.375rem;
-  top: 7%;
-  left: 7%;
-  position: absolute;
-  color: #F5F5F5;
-}
-
-.small_text_main_image {
-  font-size: 1rem;
-  top: 12%;
-  left: 7%;
-  position: absolute;
-  color: #F5F5F5;
-}
-
-@media(max-width: 375px){
-  .title_main_image{
-    font-size: 1.5rem;
-    top: 8%;
-  }
-
-  .small_text_main_image {
-    font-size: 0.875rem;
-    top: 9.2%;
-  }
-  }
-
+  /* GRAY CARDS */
 .featured_new_cars {
   width: 100%;
   text-align: center;
@@ -250,13 +309,6 @@ a:hover {
   grid-gap: 2rem;
   padding: 2rem;
 }
-
-@media(max-width: 375px){
-  .featured_new_cars{
-    display: grid;
-    grid-template-columns: auto
-  }
-  }
 
 .card {
   background-color: #ffffff;
@@ -422,6 +474,145 @@ a:hover {
   box-shadow: 0 0 0 3px rgb(107, 107, 107);
 }
 
+/* RESPONSIVE GRAY CARDS */
+@media(max-width: 375px){
+  .featured_new_cars {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0.5rem;
+    padding: 0;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    width: 22.125rem;
+    height: 20.938rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gray_card {
+    background-color: #D9D9D9;
+    width: 22.125rem;
+    height: 20.938rem;
+    border-radius: 0.938rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cards_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+  
+  .card_title {
+    font-size: 1.875rem;
+  }
+  
+  .card_subtitle {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+  .card_image_container {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .card_main_image {
+    height: fit-content;
+  }
+  
+  .image_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card_button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .card_button {
+    width: 6.262rem;
+    height: 2.813rem;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 2.813rem;
+  }
+  
+  .color_changing_buttons {
+    display: none;
+  }
+  
+  .round_button_div {
+    display: none;
+  }
+  
+  .round_button_gray {
+    display: none;
+  }
+  
+  .round_button_gray:hover {
+    display: none;
+  }
+  
+  .round_button_gray:focus {
+    display: none;
+  }
+  
+  .round_button_red {
+    display: none;
+  }
+  
+  .round_button_red:hover {
+    display: none;
+  }
+  
+  .round_button_red:focus {
+    display: none;
+  }
+  
+  .round_button_blue {
+    display: none;
+  }
+  
+  .round_button_blue:hover {
+    display: none;
+  }
+  
+  .round_button_blue:focus {
+    display: none;
+  }
+  
+  .round_button_black {
+    display: none;
+  }
+  
+  .round_button_black:hover {
+    display: none;
+  }
+  
+  .round_button_black:focus {
+    display: none;
+  }
+  }
+
+/* WORLD MAP */
 .world_map_div {
 background-image: url(images/world_map.png);
 background-size: cover;
