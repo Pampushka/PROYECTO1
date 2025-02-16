@@ -947,27 +947,32 @@ position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    }
+  }
     
-    .red_car_div_content {
-      width: 23.438rem;
-      height: 11.747rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: #D9D9D9;
-     
-    }
+  .red_car_div_content {
+    width: 23.438rem;
+    height: 11.747rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 15%;
+    top: 50%;
+  }
     
-    .red_car_text {
-      position: absolute;
-      font-size: 1.25;
-      font-family: "ABeeZee", sans-serif;
-      font-weight: 400;
-      text-align: center;
-      color: black;
-      bottom: 60%;
-    }
+  .red_car_text {
+    position: absolute;
+    font-size: 1.25rem;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    padding-bottom: 5%;
+    bottom: 60%;
+  }
 
     .red_car_title {
       height: 2.125rem;
@@ -1006,6 +1011,21 @@ position: relative;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 1%;
+}
+
+.wheel_program_title {
+  height: 9.375rem;
+  font-size: 3.125rem;
+}
+
+.wheel_program_small_text {
+  width: 28.813rem;
+  height: 3.938rem;
+  font-size: 0.875rem;
+}
+
+.learn_more_link {
+  height: 2.313rem;
 }
 
 .wheel_program_image_div {
