@@ -689,6 +689,7 @@ position: relative;
   flex-direction: column;
   position: relative;
   padding-left: 3%;
+  padding-top: 1%;
   overflow: hidden;
 }
 
@@ -752,9 +753,8 @@ position: relative;
   width: 84.875rem;
   height: 2.188rem;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  text-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -763,7 +763,7 @@ position: relative;
   height: 0.938rem;
   background-color: #D9D9D9;
   border-radius: 0.813rem;
-  position: absolute;
+  position: relative;
 }
 
 .scroll_indicator {
@@ -775,13 +775,115 @@ position: relative;
   justify-content: center;
 }
 
+/* HORIZONTAL CARDS RESPONSIVE */
+@media(max-width: 375px) {
+  .horizontal_scroll_gallery {
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+    overflow: hidden;
+  }
+  
+  .horizontal_cards {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20%;
+    overflow: hidden;
+  }
+  
+  .horizontal_card_wrapper {
+    width: 23.438rem;
+    height: 24rem;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 6%;
+    padding-top: 3%;
+  }
+  
+  .horizontal_card {
+    width: 19.375rem;
+    height: 20.875rem;
+    background-color: #D9D9D9;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 3.5rem;
+  }
+  
+  .horizontal_cards_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10%;
+  }
+  
+  .horizontal_card_image_container {
+    width: 18rem;
+    height: 11.938rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .horizontal_card_image {
+    width: 18rem;
+    height: 11.938rem;
+    object-fit: cover;
+  }
+  
+  .horizontal_image_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 7%;
+  }
+  
+  .scroll_wrapper {
+    width: 19.375rem;
+    height: 2.188rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 9%;
+  }
+  
+  .scroll {
+    width: 19.375rem;
+    height: 0.938rem;
+    background-color: #D9D9D9;
+    border-radius: 0.813rem;
+    position: relative;
+  }
+  
+  .scroll_indicator {
+    width: 4.813rem;
+    height: 0.688rem;
+    color: #949494;
+    border-radius: 0.375rem;
+    position: absolute;
+    justify-content: center;
+  }
+}
+
 /* RED CAR */
+.red_car_wrapper {
+  height: 49.438rem;
+  position: relative;
+  display: flex;
+}
 
 .red_car_div {
   background-image: url(images/red_car.png);
   background-size: cover;
   background-position: center;
   height: 49.438rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -795,9 +897,9 @@ position: relative;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    position: relative;
+    position: absolute;
     padding-left: 7%;
-    margin-top: 15%;
+    padding-top: 42%;
   }
   
   .red_car_text {
@@ -809,9 +911,15 @@ position: relative;
     color: #F5F5F5;
   }
 
+  .red_car_title {
+    height: 3.125rem;
+    width: 24.438rem;
+    padding-bottom: 17%;
+  }
+
   .red_car_small_text_div {
     width: 19.375rem;
-    position: relative;
+    position: absolute;
   }
 
   .red_car_small_text {
@@ -822,6 +930,64 @@ position: relative;
     text-align: left;
     color: #F5F5F5;
   }
+
+/* RED CAR RESPONSIVE */
+@media(max-width: 375px) {
+  .red_car_wrapper {
+    height: 23.494rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .red_car_div {
+    background-image: url(images/red_car.png);
+    background-size: cover;
+    background-position: center;
+    height: 11.747rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .red_car_div_content {
+      width: 23.438rem;
+      height: 11.747rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #D9D9D9;
+     
+    }
+    
+    .red_car_text {
+      position: absolute;
+      font-size: 1.25;
+      font-family: "ABeeZee", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: black;
+      bottom: 60%;
+    }
+
+    .red_car_title {
+      height: 2.125rem;
+      width: 9.813rem;
+      padding-bottom: 17%;
+    }
+  
+    .red_car_small_text_div {
+      width: 19.375rem;
+    }
+  
+    .red_car_small_text {
+      position: absolute;
+      font-size: 0.875rem;
+      font-family: "ABeeZee", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: #000000;
+    }
+}
 
 /* WHEEL PROGRAM */
 
