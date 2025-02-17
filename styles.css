@@ -474,6 +474,26 @@ a:hover {
   box-shadow: 0 0 0 3px rgb(107, 107, 107);
 }
 
+.round_button_yellow{
+  width: 3.438rem;
+  height: 2.5rem;
+  border-radius: 70%;
+  border-color: white;
+  border-width: 0.2rem;
+  border-style: solid;
+  background-color:#E2C324;
+  position: relative;
+}
+
+.round_button_yellow:hover {
+  background-color: #bb9e0b;
+}
+
+.round_button_yellow:focus {
+  outline: #141615;
+  box-shadow: 0 0 0 3px rgb(107, 107, 107);
+}
+
 /* RESPONSIVE GRAY CARDS */
 @media(max-width: 375px){
   .featured_new_cars {
@@ -1284,14 +1304,12 @@ a.direct_contact_button {
   display: flex;
   justify-content: start;
 }
-
 .emai_text {
   font-size: 0.875rem;
   color: white;
   position: absolute;
   padding: 6%;
 }
-
 .subscribe_button {
   width: 9rem;
   height: 3.125rem;
@@ -1301,7 +1319,6 @@ a.direct_contact_button {
   background-color: #F5F5F5;
   color: #000000;
 }
-
 .privacy_policy_container {
   width: 38.118rem;
   height: 4.438rem;
@@ -1309,14 +1326,12 @@ a.direct_contact_button {
   flex-direction: row;
   justify-content: center;
 }
-
 .checkbox {
   width: 1.25rem;
   height: 1.25rem;
   border-style: solid;
   border-color: #F5F5F5;
 }
-
 .privacy_policy_text {
   width: 30.369rem;
   height: 2.563rem;
@@ -1324,7 +1339,6 @@ a.direct_contact_button {
   align-items: start;
   padding-left: 1rem;
 }
-
 .social_media_logos {
   width: 12rem;
   display: flex;
@@ -1342,7 +1356,6 @@ a.direct_contact_button {
     flex-direction: column;
     align-items: center;
   }
-  
   .subscribe {
     width: 21.688rem;
     height: 3.25rem;
@@ -1353,7 +1366,6 @@ a.direct_contact_button {
     padding-bottom: 0;
     padding-top: 30%;
   }
-  
   .subscription_field {
     height: 3.125rem;
     display: flex;
@@ -1361,7 +1373,6 @@ a.direct_contact_button {
     justify-content: start;
     align-items: center
   }
-  
   .input_field {
     width: 21.688rem;
     height: 3.125rem;
@@ -1373,14 +1384,12 @@ a.direct_contact_button {
     display: flex;
     justify-content: start;
   }
-  
   .emai_text {
     font-size: 0.875rem;
     color: white;
     position: absolute;
     padding: 6%;
   }
-  
   .subscribe_button {
     width: 9rem;
     height: 3.125rem;
@@ -1390,7 +1399,6 @@ a.direct_contact_button {
     background-color: #F5F5F5;
     color: #000000;
   }
-  
   .privacy_policy_container {
     width: 23.438rem;
     height: 4.438rem;
@@ -1400,14 +1408,12 @@ a.direct_contact_button {
     padding-top: 20%;
     padding-left: 4%;
   }
-  
   .checkbox {
     width: 1.25rem;
     height: 1.25rem;
     border-style: solid;
     border-color: #F5F5F5;
   }
-  
   .privacy_policy_text {
     width: 19.688rem;
     height: 2.563rem;
@@ -1415,7 +1421,6 @@ a.direct_contact_button {
     align-items: start;
     padding-left: 0.5rem;
   }
-  
   .social_media_logos {
     width: 12rem;
     display: flex;
@@ -1434,18 +1439,15 @@ a.direct_contact_button {
   justify-content: center;
   padding-top: 3rem;
 }
-
 .footer_menus_small_div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .black_footer_2_title {
   font-size: 1.875rem;
   padding-bottom: 2rem;
 }
-
 .black_footer_2_subtitle {
   font-size: 0.875rem;
   padding-bottom: 1rem;
@@ -1482,47 +1484,32 @@ a.direct_contact_button {
   }
 }
 
-/*  
-.main_image {
-  width: 100vh;
-  height: 100vh;
-  background-image: url(images/M_Mercedes_CLS.png);
-  background-size: cover;
-  background-position: center;
-};
-*/
-
-
+/* FONTS */
 .abeezee-regular {
     font-family: "ABeeZee", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-  
   .abeezee-regular-italic {
     font-family: "ABeeZee", sans-serif;
     font-weight: 400;
     font-style: italic;
   }
-
   .abhaya-libre-regular {
     font-family: "Abhaya Libre", serif;
     font-weight: 400;
     font-style: normal;
   }
-  
   .abhaya-libre-medium {
     font-family: "Abhaya Libre", serif;
     font-weight: 500;
     font-style: normal;
   }
-  
   .abhaya-libre-semibold {
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
     font-style: normal;
   }
-  
   .abhaya-libre-bold {
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
@@ -1534,13 +1521,11 @@ a.direct_contact_button {
     font-weight: 800;
     font-style: normal;
   }
-  
   .abeezee-regular {
     font-family: "ABeeZee", serif;
     font-weight: 400;
     font-style: normal;
   }
-  
   .abeezee-regular-italic {
     font-family: "ABeeZee", serif;
     font-weight: 400;

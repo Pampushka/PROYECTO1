@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
 <!-- The charset attribute specifies the character encoding for the HTML document. The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world!-->
@@ -30,6 +30,7 @@
     </head>
       <body>
         <header>
+<!-- NAVBAR -->
           <div class="navbar">
               <div class="home"><img class="logo" src="images/logo.png" alt="home">
               </div>
@@ -50,7 +51,7 @@
                   </div>
           </div>
         </header>
-        <!-- START: Dropdown Menu-->
+<!-- START: Dropdown Menu WIP-->
         <div class="dropdown_menu">
           <div class="close_btn">
             <img src="images/x-solid.textClipping" alt="">
@@ -63,11 +64,10 @@
             </ul>
           </div>
         </div>
-    <!-- END: Dropdown Menu-->
+<!-- END: Dropdown Menu-->
     <section id="partner_store">
         <div class="main_image_div">
           <div class="main_image_div_content">
-      <!-- TextDiv -->
             <div class="main_image_text_div">
               <h2 class="title_main_image">New Mercedes CLS</h2>
               <p class="small_text_main_image">The power in your hands</p>
@@ -79,10 +79,10 @@
                 <div class="featured_new_cars">
                   <div class="card">
                     <div id="gray_card" class="gray_card">
-                      <div class="cards_text" id="text">
-                        <h2 class="card_title">Electric</h2>
-                        <div class="card_subtitle">
-                          <p>Mercedes E450 Cabriolet</p>
+                      <div class="cards_text" id="card_text">
+                        <h2 class="card_title" id="card_title">Electric</h2>
+                        <div class="card_subtitle" id="card_subtitle">
+                          <p id="card_type">Mercedes E450 Cabriolet</p>
                         </div>
                       </div>
                           <div class="card_image_container" id="image_container">
@@ -90,20 +90,20 @@
                               </div>
                                 <div id="image_menu" class="image_menu">
                                   <div class="card_button_div">
-                                    <button class="card_button"><p>More Info</p></button>
+                                    <button class="card_button" id="card_button"><p>More Info</p></button>
                                   </div>
                                     <div class="color_changing_buttons" id="color_changing_buttons">
                                       <div class="round_button_div">
-                                        <button class="round_button_gray" id="gray"></button>
+                                        <button class="round_button_gray" id="gray_button"></button>
                                       </div>
                                       <div class="round_button_div">
-                                        <button class="round_button_red" id="red"></button>
+                                        <button class="round_button_red" id="red_button"></button>
                                       </div>
                                       <div class="round_button_div">
-                                        <button class="round_button_blue" id="blue"></button>
+                                        <button class="round_button_blue" id="blue_button"></button>
                                       </div>
                                       <div class="round_button_div">
-                                        <button class="round_button_black" id="black"></button>
+                                        <button class="round_button_black" id="black_button"></button>
                                       </div>
                           </div>
                         </div>
@@ -126,16 +126,13 @@
                                   </div>
                                     <div class="color_changing_buttons" id="color_changing_buttons">
                                       <div class="round_button_div">
-                                        <button class="round_button_gray" id="gray"></button>
+                                        <button class="round_button_black" id="black"></button>
+                                      </div>
+                                      <div class="round_button_div">
+                                        <button class="round_button_yellow" id="black"></button>
                                       </div>
                                       <div class="round_button_div">
                                         <button class="round_button_red" id="red"></button>
-                                      </div>
-                                      <div class="round_button_div">
-                                        <button class="round_button_blue" id="blue"></button>
-                                      </div>
-                                      <div class="round_button_div">
-                                        <button class="round_button_black" id="black"></button>
                                       </div>
                           </div>
                         </div>
@@ -158,17 +155,14 @@
                                   </div>
                                     <div class="color_changing_buttons" id="color_changing_buttons">
                                       <div class="round_button_div">
-                                        <button class="round_button_gray" id="gray"></button>
-                                      </div>
-                                      <div class="round_button_div">
-                                        <button class="round_button_red" id="red"></button>
+                                        <button class="round_button_black" id="black"></button>
                                       </div>
                                       <div class="round_button_div">
                                         <button class="round_button_blue" id="blue"></button>
                                       </div>
                                       <div class="round_button_div">
-                                        <button class="round_button_black" id="black"></button>
-                                      </div>
+                                        <button class="round_button_red" id="red"></button>
+                                      </div>  
                           </div>
                         </div>
                       </div>
@@ -190,16 +184,13 @@
                                   </div>
                                     <div class="color_changing_buttons" id="color_changing_buttons">
                                       <div class="round_button_div">
-                                        <button class="round_button_gray" id="gray"></button>
+                                        <button class="round_button_black" id="black"></button>
+                                      </div>
+                                      <div class="round_button_div">
+                                        <button class="round_button_yellow" id="black"></button>
                                       </div>
                                       <div class="round_button_div">
                                         <button class="round_button_red" id="red"></button>
-                                      </div>
-                                      <div class="round_button_div">
-                                        <button class="round_button_blue" id="blue"></button>
-                                      </div>
-                                      <div class="round_button_div">
-                                        <button class="round_button_black" id="black"></button>
                                       </div>
                           </div>
                         </div>
@@ -220,14 +211,10 @@
               </section>
 <!-- WORLD IMAGE / PARTNER STORES-->
             <section id="partner_store">
-<!-- Div with background image-->
               <div class="world_map_div">
-<!-- Div content-->
- <!-- WhiteDiv -->
   <div class="world_map_div_content">
     <div class="world_image_white_div">
     </div>
-<!-- TextDiv -->
       <div class="world_image_text_div">
         <h2>Discover your
           local Mercedes
@@ -412,25 +399,4 @@
         </div>
       </div>
     </footer>
-
-<!-- 
-    <div id="white_wrapper">
-                      <div id="gray_card">
-                        <p>Electric</p>
-                          <p>Merces E450 Cabriolet</p>
-                            <div id="image_container">
-                              <img src="https://s3-alpha-sig.figma.com/img/eee9/4730/7b114c15ad3809dd7044529eeab44fd3?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JF0E2wGUshX6VeVR56Hp-FT2qOh4r5G75lpSWEkjsNu~1Kzmhgy8M~4w5DCodTXbyytk6lcqfgU2jvAR387r5-b6ChAFNHMxZFNgdb03yzx8cUd~w~iWm6iaqK~5z1aOdkKwZy184uBbRWEQ35s3jy~psEBNXIg9pFLt21T49qGZYycwUXY7Q45GuhStaTwxu-LjAv9vOt06QpbJhSpKrhL7DzeQalOwoTdoYNh5-0iROPKVSZtGmk3DR2Zb6CJeNg4hPbkWi5zv5DXXrKR7C5OImZ4eAhLyIZ1Y~r36SzQXwGBBR7JOxUvzoQqzkXQs978c8mIPfxN7g1CpM3JzzQ__" alt="Merces E450 Cabriolet"/>
-                                </div>
-                                  <div id="image_menu">
-                                    <button><p>More Info</p></button>
-                                      <div id="color_changing_buttons">
-                                    <button id="gray"></button>
-                                  <button id="red"></button>
-                                <button id="blue"></button>
-                              <button id="black"></button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                    -->
 </html>
