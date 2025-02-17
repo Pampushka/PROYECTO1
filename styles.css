@@ -639,6 +639,7 @@ position: relative;
       flex-wrap: wrap;
       justify-content: center;
       position: relative;
+      padding-left: 0;
     }
     
     .world_image_white_div {
@@ -665,7 +666,8 @@ position: relative;
       flex-direction: column;
       text-align: center;
       color: #F5F5F5;
-      top: 2rem;
+      top: 2.5rem;
+      left: 12%;
     }
     
     .world_map_button {
@@ -678,6 +680,8 @@ position: relative;
       color: black;
       position: absolute;
       border-radius: 5rem;
+      left: 12%;
+      top: 70%
     }
   }
 
@@ -847,7 +851,7 @@ position: relative;
     width: 19.375rem;
     height: 2.188rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
     padding-left: 9%;
@@ -1091,6 +1095,7 @@ position: relative;
   
   .wheel_program_image {
     object-fit: contain;
+    width: 99%;
   }
 }
 
@@ -1107,7 +1112,7 @@ footer {
 /* FOOTER RESPONSIVE */
 @media(max-width: 375px) {
   footer {
-    height: 90.125rem;
+    height: 100.125rem;
     background-color: black;
     color: white;
     display: flex;
@@ -1234,6 +1239,7 @@ a.direct_contact_button {
     height: 260.375rem;
     display: flex;
     justify-content: center;
+    gap: 3%;
     padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
@@ -1392,6 +1398,7 @@ a.direct_contact_button {
     flex-direction: row;
     justify-content: center;
     padding-top: 20%;
+    padding-left: 4%;
   }
   
   .checkbox {
