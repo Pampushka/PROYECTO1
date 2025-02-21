@@ -9,11 +9,6 @@
   background-color: #F5F5F5;
 }
 
-/*! Use background-image for text on top of an image!!! 
-background-size: cover;
-background-position: center;
-*/
-
 ul {
   padding: 0.494rem;
 }
@@ -140,27 +135,20 @@ a:hover {
   background-image: url(images/M_Mercedes_CLS.png);
   background-size: cover;
   background-position: center;
-  height: 49.438rem;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   position: relative;
   }
   
-  .main_image_div_content {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: relative;
-    padding-left: 3%;
-  }
-  
   .main_image_text_div {
-    width: 35rem;
-    height: 8.75rem;
     padding-left: 3%;
-    padding-top: 20%;
+    padding-top: 5%;
     position: absolute;
+    height: 0;
+    padding-bottom: 20%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -171,19 +159,17 @@ a:hover {
     font-family: "Abhaya Libre", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4.375rem;
-    top: 8%;
+    font-size: 5vh;
   }
 
   .small_text_main_image {
     font-family: "Abhaya Libre", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
-    top: 9.2%;
+    font-size: 2vh;
   }
 
-/* RESPONSIVE MAIN IMAGE */
+/* RESPONSIVE MAIN IMAGE 
 @media(max-width: 375px){
   .main_image_div {
     background-image: url(images/M_Mercedes_CLS.png);
@@ -231,6 +217,7 @@ a:hover {
       
     }
   }
+  */
 
   /* NEAREST DEALER */
 
@@ -303,25 +290,21 @@ a:hover {
 .featured_new_cars {
   width: 100%;
   text-align: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 2rem;
-  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.card {
-  background-color: #ffffff;
-  width: 41.061rem;
-  height: 36.063rem;
-  padding: 0.5rem;
+.column{
+  flex: 25%;
 }
 
 .gray_card {
+  width: 40%;
   background-color: #D9D9D9;
-  width: 39.811rem;
-  height: 34.813rem;
-  border-radius: 1rem;
+  border-radius: 2%;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -344,7 +327,7 @@ a:hover {
 }
 
 .card_image_container {
-  width: 36.625rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
   padding-bottom: 5%;
