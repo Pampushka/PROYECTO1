@@ -144,11 +144,11 @@ a:hover {
   }
   
   .main_image_text_div {
+    width: 50vh;
     padding-left: 3%;
     padding-top: 5%;
     position: absolute;
-    height: 0;
-    padding-bottom: 20%;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -157,102 +157,158 @@ a:hover {
 
   .title_main_image{
     font-family: "Abhaya Libre", serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     font-size: 5vh;
   }
 
   .small_text_main_image {
     font-family: "Abhaya Libre", serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     font-size: 2vh;
   }
 
-/* RESPONSIVE MAIN IMAGE 
-@media(max-width: 375px){
-  .main_image_div {
-    background-image: url(images/M_Mercedes_CLS.png);
-    background-size: cover;
-    background-position: center;
-    height: 12.938rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    position: relative;
-    }
-    
-    .main_image_div_content {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      padding-left: 3%;
-    }
-    
-    .main_image_text_div {
-      width: 20.063rem;
-      height: 2.5rem;
-      padding-left: 2.2rem;
-      padding-top: 9.2rem;
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      color: #F5F5F5;
-    }
-  
-    .title_main_image{
-      font-family: "Abhaya Libre", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.5rem;
-     
-    }
-  
-    .small_text_main_image {
-      font-family: "Abhaya Libre", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 0.875rem;
-      
-    }
-  }
-  */
+ /* GRAY CARDS */
+.new_cards {
+  width: 100%;
+  height: 90dvw;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5%;
+  column-gap: 5%;
+  padding: 3% 4% 3% 4%;
+  text-align: center;
+  justify-content: center;
+}
 
-  /* NEAREST DEALER */
+.gray_card {
+  width: 47%;
+  height: 48%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #D9D9D9;
+  border-radius: 3%;
+}
+
+.gray_card_text {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-size: 2.5vw;
+}
+
+.card_p {
+  font-size: 1.5vw;
+}
+
+.button_p {
+  font-size: 1vw;
+}
+
+.gray_card_image{
+  background-image: url(images/2023-E450-CABRIOLET-AVP-D\ 1.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.gray_card_menu {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gray_card_button {
+  width: 35%;
+  height: 80%;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5%;
+}
+
+.round_buttons {
+  width: 41%;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gray_button {
+  width: 15.5%;
+  height: 48%;
+  border-radius: 70%;
+  border-color: white;
+  background-color: #C5C5C5;
+  border-width: 0.2rem;
+  border-style: solid;
+  list-style: none;
+  position: relative;
+}
+
+@media(max-width: 375px){
+  .new_cards {
+    width: 100%;
+    height: 390dvw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.5%;
+    padding: 3% 4% 3% 4%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .gray_card {
+    width: 100%;
+    height: 25%;
+    padding: 4%;
+    background-color: #D9D9D9;
+    border-radius: 3%;
+  }
+}
+
+/* NEAREST DEALER */
 
 .nearest_dealer_div {
-  padding-top: 2%;
-  padding-left: 3%;
-  padding-right: 3%;
+  height: 17vh;
+  padding: 2% 3% 2% 3%;
   gap: 10%;
-}
-
-.nearest_dealer_div_p {
-  padding-bottom: 5%;
-  width: 40%;
-}
-
-.nearest_dealer_title_div {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  width: 60%;
 }
 
 .nearest_dealer_title {
-  font-size: 4.375rem;
+  width: 60%;
+  font-size: 4vh;
   font-family: "Abhaya Libre", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .nearest_dealer_p {
-  font-size: 1.5rem;
+  width: 30%;
+  font-size: 1vh;
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/*
 @media(max-width: 375px){
   .nearest_dealer_div {
     padding: 3%;
@@ -285,283 +341,7 @@ a:hover {
     font-style: normal;
   }
   }
-
-  /* GRAY CARDS */
-.featured_new_cars {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  padding-top: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.column{
-  flex: 25%;
-}
-
-.gray_card {
-  width: 40%;
-  background-color: #D9D9D9;
-  border-radius: 2%;
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.cards_text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 10%;
-}
-
-.card_title {
-  font-size: 1.875rem;
-}
-
-.card_subtitle {
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.card_image_container {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 5%;
-  text-align: center;
-  justify-content: center;
-}
-
-.card_main_image {
-  height: fit-content;
-}
-
-.image_menu {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.card_button_div {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.card_button {
-  width: 6.262rem;
-  height: 2.813rem;
-  border: none;
-  background-color: white;
-  color: black;
-  border-radius: 2.813rem;
-}
-
-.color_changing_buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-.round_button_div {
-  width: 3.438rem;
-  height: 2.5rem;
-  display: flex;
-  text-align: center;
-  padding: 0.5rem;
-}
-
-.round_button_gray {
-  width: 3.438rem;
-  height: 2.5rem;
-  border-radius: 70%;
-  border-color: white;
-  background-color: #C5C5C5;
-  border-width: 0.2rem;
-  border-style: solid;
-  list-style: none;
-  position: relative;
-}
-
-.round_button_gray:hover {
-  background-color: #a8a8a8;
-}
-
-.round_button_gray:focus {
-  outline: #141615;
-  box-shadow: 0 0 0 3px rgb(107, 107, 107);
-}
-
-.round_button_red {
-  width: 3.438rem;
-  height: 2.5rem;
-  border-radius: 70%;
-  border-color: white;
-  border-width: 0.2rem;
-  border-style: solid;
-  background-color: #B20000;
-  position: relative;
-}
-
-.round_button_red:hover {
-  background-color: #890101;
-}
-
-.round_button_red:focus {
-  outline: #141615;
-  box-shadow: 0 0 0 3px rgb(107, 107, 107);
-}
-
-.round_button_blue {
-  width: 3.438rem;
-  height: 2.5rem;
-  border-radius: 70%;
-  border-color: white;
-  list-style: none;
-  border-width: 0.2rem;
-  border-style: solid;
-  background-color: #0010A1;
-  position: relative;
-}
-
-.round_button_blue:hover {
-  background-color: #000d7e;
-}
-
-.round_button_blue:focus {
-  outline: #141615;
-  box-shadow: 0 0 0 3px rgb(107, 107, 107);
-}
-
-.round_button_black {
-  width: 3.438rem;
-  height: 2.5rem;
-  border-radius: 70%;
-  border-color: white;
-  border-width: 0.2rem;
-  border-style: solid;
-  background-color:black;
-  position: relative;
-}
-
-.round_button_black:hover {
-  background-color: #000000;
-}
-
-.round_button_black:focus {
-  outline: #141615;
-  box-shadow: 0 0 0 3px rgb(107, 107, 107);
-}
-
-.round_button_yellow{
-  width: 3.438rem;
-  height: 2.5rem;
-  border-radius: 70%;
-  border-color: white;
-  border-width: 0.2rem;
-  border-style: solid;
-  background-color:#E2C324;
-  position: relative;
-}
-
-.round_button_yellow:hover {
-  background-color: #bb9e0b;
-}
-
-.round_button_yellow:focus {
-  outline: #141615;
-  box-shadow: 0 0 0 3px rgb(107, 107, 107);
-}
-
-/* RESPONSIVE GRAY CARDS */
-@media(max-width: 375px){
-  .featured_new_cars {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 0.5rem;
-    padding: 0;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    width: 22.125rem;
-    height: 20.938rem;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .gray_card {
-    background-color: #D9D9D9;
-    width: 22.125rem;
-    height: 20.938rem;
-    border-radius: 0.938rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cards_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 5%;
-  }
-  
-  .card_title {
-    font-size: 1.875rem;
-  }
-  
-  .card_subtitle {
-    padding-top: 2%;
-    padding-bottom: 2%;
-  }
-  
-  .card_image_container {
-    width: 20rem;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5%;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .card_main_image {
-    height: fit-content;
-  }
-  
-  .image_menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .card_button_div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .card_button {
-    width: 6.262rem;
-    height: 2.813rem;
-    border: none;
-    background-color: white;
-    color: black;
-    border-radius: 2.813rem;
-  }
-  
-  .color_changing_buttons {
-    display: none;
-  }
-  }
+  */
 
 /* WORLD MAP */
 .world_map_div {
