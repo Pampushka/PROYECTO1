@@ -6,6 +6,7 @@
 }
 
 :root {
+  --fs-10px: 0.625rem;
   --fs-12px: 0.75rem;
   --fs-14px: 0.875rem;
   --fs-16px: 1rem;
@@ -35,7 +36,7 @@ li {
 a {
   text-decoration: none;
   color: #141615;
-  font-size: 0.75rem;
+  font-size: var(--fs-12px);;
 }
 
 a:hover {
@@ -129,19 +130,15 @@ a:hover {
   .links{
     display: none;
   }
-
   .navbar .toggle_btn {
     display: block;
   }
-  
   .navbar .close_btn {
     display: block;
   }
-
   .dropdown_menu {
     display: block;
   }
-
   .bars {
     width: 1.313rem;
     height: 1 rem;
@@ -188,7 +185,7 @@ a:hover {
 
   @media(width < 1440px) {
     .main_image_text_div {
-      top: 65%;%;
+      top: 65%;
       }
 
     .title_main_image{
@@ -237,7 +234,7 @@ a:hover {
 
   @media(width < 500px) {
     .main_image_text_div {
-      top: 57%;%;
+      top: 57%;
       }
     .title_main_image{
       font-family: "Abhaya Libre", serif;
@@ -307,6 +304,33 @@ a:hover {
   display: flex;
 }
 
+.gray_card_image_2{
+  background-image: url(images/mercedes_SUV.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.gray_card_image_3{
+  background-image: url(images/mercedes_cabriolet_2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.gray_card_image_4{
+  background-image: url(images/Mercedes_SUV_2.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
 .gray_card_menu {
   width: 100%;
   height: 15%;
@@ -342,27 +366,6 @@ a:hover {
   border-style: solid;
   list-style: none;
   position: relative;
-}
-/*
-@media(max-width: 375px){
-  .new_cards {
-    width: 100%;
-    height: 390dvw;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 0.5%;
-    padding: 3% 4% 3% 4%;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .gray_card {
-    width: 100%;
-    height: 2%;
-    padding: 4%;
-    background-color: #D9D9D9;
-    border-radius: 3%;
-  }
 }
 
 /* NEAREST DEALER */
@@ -672,8 +675,10 @@ a.direct_contact_button {
   text-align: center;
   display: flex;
   flex-direction: column;
-  column-gap: 3%;
+  column-gap: 2%;
   align-items: center;
+  justify-content: center;
+  margin: 3%;
 }
 
 .newsletter_title {
@@ -732,7 +737,7 @@ a.direct_contact_button {
   display: flex;
   justify-content: start;
 }
-.emai_text {
+.email_text {
   font-size: var(--fs-14px);
   color: white;
   position: absolute;
@@ -759,10 +764,10 @@ a.direct_contact_button {
   height: 1.25rem;
   border-style: solid;
   border-color: #F5F5F5;
+  margin-right: 2%;
 }
 .privacy_policy_text {
-  width: 30.369rem;
-  height: 2.563rem;
+  font-size: var(--fs-12px);
   display: flex;
   align-items: start;
   padding-left: 1rem;
@@ -790,9 +795,10 @@ a.direct_contact_button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 5%;
 }
 .black_footer_2_title {
-  
+  font-size: var(--fs-20px);
   padding-bottom: 2rem;
 }
 .black_footer_2_subtitle {
