@@ -375,7 +375,7 @@ a:hover {
 /* NEAREST DEALER */
 
 .nearest_dealer_div {
-  height: 25vh;
+  height: 30%;
   padding: 2% 3% 2% 3%;
   gap: 10%;
   display: flex;
@@ -400,24 +400,39 @@ a:hover {
 }
 
 /* WORLD MAP */
+
+/*
 .world_map_div {
 background-image: url(images/world_map.png);
 background-size: cover;
 background-position: center;
 width: 100%;
-height: 0;
-padding-bottom: 80%;
+height: 70vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+position: relative;
+}
+*/
+
+.world_map_div {
+width: 100%;
 display: flex;
 flex-direction: row;
 align-items: center;
 position: relative;
 }
 
+.map_image  {
+width: 100%;
+position: relative;
+}
+
+
 .world_image_text_div {
-  width: 29.118rem;
-  height: 20rem;
   background-color: #A2A2A282;
   border-radius: 0.875rem;
+  margin: 2% 60% 2% 2%;
   padding: 2%;
   font-size: var(--fs-50px);
   font-family: "ABeeZee", sans-serif;
@@ -431,7 +446,8 @@ position: relative;
   color: #F5F5F5;
   position: absolute;
   left: 3%;
-  top: 40%;
+  top: 30%;
+  bottom: 30%;
 }
 
 .world_map_button {
