@@ -368,6 +368,10 @@ a:hover {
   position: relative;
 }
 
+@media(max-width: 375px) {
+  
+}
+
 /* NEAREST DEALER */
 
 .nearest_dealer_div {
@@ -671,11 +675,10 @@ a.direct_contact_button {
 
 /* BLACK FOOTER */
 .black_footer {
-  height: 30vh;
+  height: 20vh;
   text-align: center;
   display: flex;
   flex-direction: column;
-  column-gap: 2%;
   align-items: center;
   justify-content: center;
   margin: 3%;
@@ -683,8 +686,8 @@ a.direct_contact_button {
 
 .newsletter_title {
   font-size: var(--fs-20px);
-  padding-top: 9%;
-  padding-bottom: 8%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .black_footer_2 {
@@ -715,7 +718,7 @@ a.direct_contact_button {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding-bottom: 20%;
+  padding-bottom: 10%;
 }
 
 .subscription_field {
@@ -741,7 +744,7 @@ a.direct_contact_button {
   font-size: var(--fs-14px);
   color: white;
   position: absolute;
-  padding: 6%;
+  padding: 3%;
 }
 .subscribe_button {
   width: 9rem;
@@ -777,7 +780,7 @@ a.direct_contact_button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 
 /* SUBSCRIBE RESPONSIVE */
