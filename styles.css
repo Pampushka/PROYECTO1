@@ -434,7 +434,7 @@ position: relative;
   border-radius: 0.875rem;
   margin: 2% 60% 2% 2%;
   padding: 2%;
-  font-size: var(--fs-50px);
+  font-size: 4vw;
   font-family: "ABeeZee", sans-serif;
   font-weight: 400;
   display: flex;
@@ -451,15 +451,15 @@ position: relative;
 }
 
 .world_map_button {
-  width: 15.881rem;
-  height: 3.188rem;
+  width: 15.881vw;
+  height: 18%;
   border: none;
   justify-content: center;
   align-items: center;
   background-color: #F5F5F5;
   color: black;
   border-radius: 5rem;
-  font-size: var(--fs-12px);
+  font-size: 0.7vw;
   left: 25%;
 }
 
